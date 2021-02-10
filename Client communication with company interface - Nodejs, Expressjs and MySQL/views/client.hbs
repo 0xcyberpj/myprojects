@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>client</title>
+  </head>
+  <body>
+    <!-- <h3>Enter your ID</h3>
+    <form action="./clientid_login" method="get">
+      <input type="number" name="clientID" value="" placeholder="ClientID">
+      <input type="submit" name="" value="submit">
+
+      {{#if message}}
+      <h4>{{message}}</h4> {{!--there should be no space in if message and closing of if--}}
+      {{/if}}
+    </form> -->
+    <a href="./clientInterface" style="color:red"><h2>Existing user, Please click here</h2></a>
+
+    <br><br><br><br><br>
+
+    <h3>If new client, Register</h3>
+    <form action="./clientid_register" method="get">
+      <input type="text" name="clientName" value="" placeholder="Your Name"><br>
+      <input type="text" name="clientCompany" value="" placeholder="Company Name"><br>
+      <input type="text" name="clientMessage" value="" placeholder="Company Address"><br>
+      <input type="number" name="clientContact" value="" placeholder="Contact"><br>
+      <input type="submit" name="" value="submit">
+
+      {{#if message1}}
+      <h4>{{message1}}</h4> {{!--there should be no space in if message and closing of if--}}
+      {{/if}}
+    </form>
+
+
+
+
+  </body>
+</html>

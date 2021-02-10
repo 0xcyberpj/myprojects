@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>constructor</title>
+  </head>
+  <body>
+    <h4>Hey Constructor</h4>
+    <h3>Enter clientID for Getting Info and message</h3>
+    <form action="./getinfo" method="get">
+      <input type="text" name="clientID" value="" placeholder="clientID">
+      <input type="submit" name="" value="GO">
+      {{#if message2}}
+      <h3>{{message2}}</h3> {{!--there should be no space in if message and closing of if--}}
+      {{/if}}
+      {{#if message3}}
+      <h3>{{message3}}</h3> {{!--there should be no space in if message and closing of if--}}
+      {{/if}}
+    </form>
+
+    <br><br><br><br><br>
+
+    <h3>Send Message to Client</h3>
+    <form action="./SendClientMessage" method="get">
+      <input type="number" name="clientID" value="" placeholder="clientID">
+      <input type="text" name="SendMessage" value="" placeholder="Message">
+      <input type="number" name="Prog" value="" placeholder="Percentage of work completed">
+      <input type="submit" name="" value="Send Message">
+      {{#if message1}}
+      <h2>{{message1}}</h2> {{!--there should be no space in if message and closing of if--}}
+      {{/if}}
+    </form>
+  </body>
+</html>
